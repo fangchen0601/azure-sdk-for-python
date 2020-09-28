@@ -35,6 +35,6 @@ function LogDebug
     }
     else 
     {
-        Write-Debug "$args"
+        Write-Debug "$args" -Debug
     }
 }
