@@ -5,6 +5,13 @@
 # --------------------------------------------------------------------------
 
 from ._version import VERSION
+from ._client import ComputationClient
+from ._generated.models import ComputeNode, Operation
 
+__all__ = [
+    'ComputationClient',
+    'ComputeNode',
+    'Operation'
+]
 
 __version__ = VERSION
