@@ -3,7 +3,7 @@ from datetime import datetime
 
 from azure.core import MatchConditions
 
-from .._generated.models import Get7ItemsItem
+from .._generated.models import SettingFields
 from .._models import ConfigurationSetting
 
 class AppConfigurationClient(object):
@@ -24,7 +24,7 @@ class AppConfigurationClient(object):
         match_condition: Optional[MatchConditions] = None,
         etag: Optional[str] = None,
         accept_datetime: Optional[datetime] = None,
-        select: Optional[List[Union[str, Get7ItemsItem]]] = None,
+        select: Optional[List[Union[str, SettingFields]]] = None,
         **kwargs
     ) -> ConfigurationSetting:
         """Get the value of a particular configuration settings.
@@ -35,7 +35,7 @@ class AppConfigurationClient(object):
         :keyword str etag: The etag by which the match condition should be assessed.
         :keyword datetime accept_datetime: The last modified date filter.
         :keyword select: The specific properties of the setting that should be returned.
-        :paramtype select: List[Union[str, Get7ItemsItem]]
+        :paramtype select: List[Union[str, ~azure.learnappconfig.SettingFields]]
         :raises ~azure.core.exceptions.ResourceNotFoundError: If no matching configuration setting exists.
         """
         pass

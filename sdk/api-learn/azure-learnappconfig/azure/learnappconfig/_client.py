@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from ._models import ConfigurationSetting
-
+from ._generated.models import SettingFields
 
 class AppConfigurationClient(object):
     """A Client for the AppConfiguration Service.
@@ -32,7 +32,7 @@ class AppConfigurationClient(object):
         :param str label: The label of the setting.
         :keyword datetime accept_datetime: The last modified date filter.
         :keyword select: The specific properties of the setting that should be returned.
-        :paramtype select: List[Union[str, Get7ItemsItem]]
+        :paramtype select: List[Union[str, ~azure.learnappconfig.SettingFields]]
         :raises ~azure.core.exceptions.ResourceNotFoundError: If no matching configuration setting exists.
         """
         pass
