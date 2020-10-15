@@ -39,10 +39,17 @@ def main():
         raise
 
     # post pi
-    client.compute_pi()
+    try:
+        client.compute_pi()
+    except ResourceNotFoundError:
+        raise
 
     # get operation
-    client.get_operation()
+    try:
+        operation = client.get_operation()
+        print(operation.status)
+    except ResourceNotFoundError:
+        raise
 
 if __name__ == "__main__":
     main()
