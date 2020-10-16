@@ -13,7 +13,7 @@ class AppConfigurationClientTest(AsyncAppConfigTestCase):
         super(AppConfigurationClientTest, self).setUp()
         self.app_config_url = self.set_value_to_scrub('APP_CONFIG_URL', APP_CONFIG_URL)
 
-    @pytest.mark.asyncio
+    @AsyncAppConfigTestCase.await_prepared_test
     async def test_get_key_value(self):
         client = self.create_basic_client(AppConfigurationClient, account_url=self.app_config_url)
         assert client is not None
@@ -21,7 +21,7 @@ class AppConfigurationClientTest(AsyncAppConfigTestCase):
         assert self.env_color == await client.get_configuration_setting(self.env_color_key)
         assert self.env_greeting == await client.get_configuration_setting(self.env_greeting_key)
 
-    @pytest.mark.asyncio
+    @AsyncAppConfigTestCase.await_prepared_test
     async def test_get_invalid_key(self):
         client = self.create_basic_client(AppConfigurationClient, account_url=self.app_config_url)
         assert client is not None
