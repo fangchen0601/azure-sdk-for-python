@@ -2,6 +2,7 @@ import asyncio
 import functools
 import os
 
+from azure.core.credentials import AccessToken
 from azure_devtools.scenario_tests.utilities import trim_kwargs_from_test_function
 from devtools_testutils.azure_testcase import _is_autorest_v3
 
