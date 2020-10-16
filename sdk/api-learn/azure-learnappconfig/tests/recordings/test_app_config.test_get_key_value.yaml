@@ -33,7 +33,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 16 Oct 2020 19:08:09 GMT
+      - Fri, 16 Oct 2020 19:10:16 GMT
       etag:
       - W/"Xf2K3YG17tJjIB6q69Hnx6mbnG8"
       last-modified:
@@ -43,7 +43,7 @@ interactions:
       strict-transport-security:
       - max-age=15724800; includeSubDomains
       sync-token:
-      - zAJw6V16=NDo0IzI3MzcyMzAjNz02ODQ0NTg=;sn=2737230
+      - zAJw6V16=NDo0IzI3MzcyNTYjNz02ODQ0NTg=;sn=2737256
       transfer-encoding:
       - chunked
       vary:
@@ -86,7 +86,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 16 Oct 2020 19:08:09 GMT
+      - Fri, 16 Oct 2020 19:10:16 GMT
       etag:
       - W/"37XDDL5YchvmcUey6B1D8yjHseA"
       last-modified:
@@ -96,7 +96,7 @@ interactions:
       strict-transport-security:
       - max-age=15724800; includeSubDomains
       sync-token:
-      - zAJw6V16=NDo0IzI3MzcyMzAjNz02ODQ0NTg=;sn=2737230
+      - zAJw6V16=NDo0IzI3MzcyNTYjNz02ODQ0NTg=;sn=2737256
       transfer-encoding:
       - chunked
       vary:

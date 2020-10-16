@@ -22,8 +22,8 @@ class AppConfigurationClientTest(AsyncAppConfigTestCase):
         client = self.create_basic_client(AppConfigurationClient, account_url=self.app_config_url)
         assert client is not None
 
-        assert self.env_color == await client.get_configuration_setting(self.env_color_key)['value']
-        assert self.env_greeting == await client.get_configuration_setting(self.env_greeting_key)['value']
+        assert self.env_color == (await client.get_configuration_setting(self.env_color_key))['value']
+        assert self.env_greeting == (await client.get_configuration_setting(self.env_greeting_key))['value']
 
     @AsyncAppConfigTestCase.await_prepared_test
     async def test_get_invalid_key(self):
